@@ -29,7 +29,7 @@ const Home = ({ navigation }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/posts') // Fake API endpoint
+    axios.get('https://jsonplaceholder.typicode.com/posts') 
       .then(response => {
         setData(response.data);
         setLoading(false);
